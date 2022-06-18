@@ -1,0 +1,63 @@
+.main {
+    background-color: rgb(175, 242, 242);
+}
+
+
+.names {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    margin-top: 10px;
+    margin-left: 90px;
+    color: rgb(12, 12, 168);
+    background-color: beige;
+}
+
+.names1 {
+    margin: 15px;
+}
+
+.counter {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.num {
+    margin-left: 20px;
+    margin-left: 20px;
+}
+
+.delete {
+    width: 15px;
+    height: 15px;
+    margin-left: 20px;
+    font-size: x-small;
+    border: 1px solid green;
+    /* padding: 1px; */
+    background-color: aquamarine;
+}
+
+.taskform {
+    display: block;
+
+}
+
+.description {
+    position: absolute;
+    display: block;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.speed {
+    margin: px;
+}
+
+.price {
+    margin-top: 45px;
+}
+
+.view {
+    margin-top: 45px;
+}
