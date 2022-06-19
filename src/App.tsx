@@ -12,14 +12,16 @@ const App = () => {
                 todoPage={{
                     tasks: [],
                     addTest: () => { },
-                    removeTest: () => { }
+                    removeTest: () => { },
+                    id: ''
                 }}
                 countPage={{
                     nums: []
                 }}
                 addTest={addTest}
-                removeTestCallback={removeTest} 
-                removeTest={removeTest}               />
+                removeTestCallback={removeTest}
+                removeTest={removeTest}
+                 id={''}                             />
 
         </div>
     )

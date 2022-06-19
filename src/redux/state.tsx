@@ -13,7 +13,8 @@ export type CountType = {
 export type TodoPageType = {
     tasks: TaskType[]
     addTest: (testText: string) => void
-    removeTest: (removedTest: string) => void
+    removeTest: (id: string) => void
+    id: string
 }
 
 export type CountPageType = {
@@ -25,8 +26,9 @@ export type AllTypes = {
     countPage: CountPageType
     addTest: (testText: string) => void
     addTestCallback: (testText: string) => void
-    removeTest: (removedTest: string) => void
+    removeTest: (id: string) => void
     removeTestCallback: (removedTest: string) => void
+    id: string
 }
 
 let state: AllTypes = {
@@ -38,7 +40,8 @@ let state: AllTypes = {
         ],
 
         addTest: (testText: string) => { },
-        removeTest: () => { }
+        removeTest: () => { },
+        id: ''
     },
 
     countPage: {
@@ -48,8 +51,9 @@ let state: AllTypes = {
     },
     addTestCallback: (testText: string) => { },
     addTest: () => { },
-    removeTest: (removedTest: string) => { },
-    removeTestCallback: (removedTest: string) => { }
+    removeTest: (id: string) => { },
+    removeTestCallback: (removedTest: string) => { },
+    id: ""
 }
 
 export const addTest = (testText: string) => {
@@ -62,11 +66,13 @@ export const addTest = (testText: string) => {
     RenderTree(state)
 }
 
-export const removeTest = (removedTest: string) => {
-    let focus = state.todoPage.tasks.filter((t) => {
-        return t.task !== removedTest
+export const removeTest = (id: string) => {
+    let focus: any = state.todoPage.tasks.filter((t) => {
+         return t.id !== id  
     })
-    return state.todoPage.tasks.push(focus)
+    state.todoPage.tasks = focus
+    console.log(state.todoPage.tasks);
+    
     RenderTree(state)
 }
 

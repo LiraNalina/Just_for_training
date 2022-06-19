@@ -33,8 +33,6 @@ export const Sbor = (props: AllTypes) => {
 
             <button onClick={onClickAddHandler}>+</button>
 
-
-
             <div className={s.description}>
                 <div className={s.speed}>Speed</div>
                 <div className={s.price}>Price</div>

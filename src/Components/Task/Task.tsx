@@ -4,7 +4,7 @@ import state, { TaskType } from "../../redux/state";
 export const Task = (props: TaskType) => {
 
 const onRemoveClickHandler = () => {
-    state.removeTest(props.task)
+    state.removeTest(props.id)
 }
 
     return (
