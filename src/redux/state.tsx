@@ -33,7 +33,8 @@ let state: AllTypes = {
     todoPage: {
         tasks: [
             { id: v1(), task: "speed" },
-            { id: v1(), task: "price" }
+            { id: v1(), task: "price" },
+            { id: v1(), task: "comfort" },
         ],
 
         addTest: (testText: string) => { },
